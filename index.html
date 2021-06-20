@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-handling</title>
+    
+
+ <style>
+
+ body{
+  background-color: rgba(1, 11, 17, 0.363);
+}
+form {
+  display: grid;
+  justify-content: center;
+}
+h1{
+  font-family:  Georgia;
+  text-align: center;
+}
+        
+#formular{
+  text-align: center;
+}
+button:hover {
+  background-color: #8b94926c;
+  cursor: pointer;
+  padding: 0.3em;
+}
+
+button[disabled] {
+  background-color: rgba(153, 143, 143, 0.685);
+  cursor: none;
+}
+input[name="fullName"] {
+    padding: 0.5em;   
+}
+input[name="email"]{
+    padding: 0.5em;
+}
+
+
+        
+</style>
+</head>
+
+<body>
+    <div class="formular">
+   <h1>Subscription form | News portal</h1> 
+<form>
+     <input  type="text" name="fullName" placeholder="Your full name"><br>
+     <input  type="text" name="email" placeholder="Your email address"><br>
+     
+     <hr>
+
+     <div id="options"> </div>
+
+     <hr>
+     <label id="terms">
+         <input type="checkbox" name="terms"> I agree with the terms and conditions!
+     </label>
+     <br>
+
+     <button  id="btn-subscribe" >Enter</button>
+</form>   
+</div> 
+  <script src="form-handle.js"></script> 
+</body>
+</html>
